@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        
+        }
+        body{
+            background-color: azure;
+        }
+        .himanshuImage{
+            height:200px;
+            width:200px;
+            border:2px solid black;
+            border-radius: 40%;
+           
+        }
+        .container{
+            height:300px;
+            width:100%;
+            position:relative;
+          
+        }
+        .left,.right{
+            height:100%;
+            width:25%;
+            background-color: rgba(151, 194, 209, 0.612);
+            display: inline-block;
+            border-radius: 3%;
+            padding: 10px;
+        }
+        .left{
+            position: absolute;
+            top:0px;
+            left:10%;
+        }
+        .right{
+            position: absolute;
+            top:0px;
+            right:10%;
+        }
+        .programmingImage,.workoutImage{
+            height:70%;
+            width:50%;
+            float:left;
+            padding:10px;
+            border-radius: 6%;
+        }
+        @media(max-width:600px)
+        {
+            body{
+                display:block;
+            }
+        }
+
+       
+       
+    </style>
+</head>
+<body>
+    <h1>Himanshu Singh</h1>
+    <img src="./images/himanshu.png" class="himanshuImage">
+    <h2>My Hobbies</h2>
+<div class="container">
+    <div class="left">
+        <img src="./images/programming.webp" alt="programming image" class="programmingImage">
+        <h3>Programming</h3>
+        <p>Programming is a way of solving real life problems by using computer languages. I love to code but I'm more like a backend guy</p>
+
+    </div>
+    
+    <div class="right">
+        <img src="./images/workout.jpeg" class="workoutImage">
+        <h3>Workout</h3>
+        <p>Workout is a regular part of my life. It keeps me fit and motivated for all the life tasks.</p>
+    </div>
+</div>
+
+</body>
+</html>
